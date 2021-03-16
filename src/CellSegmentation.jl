@@ -23,7 +23,7 @@ export
     extract_segment
 
 # Type for an axis to index a cell image: a Height x Width x Channel axes,
-#   where the Heigh and Width dimensions are integer-indexed and Channels are
+#   where the Height and Width dimensions are integer-indexed and Channels are
 #   named by symbols 
 CellImageAxes = Tuple{
     AxisArrays.Axis{:height,UnitRange{Int64}},
@@ -36,7 +36,7 @@ CellImage = (
     AxisArrays.AxisArray{T,3,S,CellImageAxes}
     where S <: Array{T,3}
     where T <: ColorTypes.Gray{R}
-    where R <: ColorTypes.Fractional
+    where R <: Union{ColorTypes.Fractional, Bool}
 )
 
 # Certain operations may strip axes, making this a useful type alias

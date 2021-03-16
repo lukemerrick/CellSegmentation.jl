@@ -1,7 +1,7 @@
 name = "CellSegmentation"
 uuid = "bc04555c-6b3a-48e0-9330-69d76e9b444f"
 authors = ["Luke Merrick <contact@lukemerrick.com> and contributors"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 AxisArrays = "39de3d68-74b9-583c-8d2d-e117c070f3a9"
